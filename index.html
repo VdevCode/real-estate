@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bất động sản</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+
+            <!--Logo-->
+            <a href="" class="logo">
+                <ion-icon name="business-outline"></ion-icon>Real Estate
+            </a>
+
+            <!--List menu-->
+            <nav class="navbar container">
+                <ul class="navbar-list">
+                    <li>
+                      
+                        <a href="#" class="navbar-link" data-nav-link>Trang chủ</a>
+                    </li>
+
+                    <li>
+                       
+                        
+                        <a href="#" class="navbar-link" data-nav-link>Mua</a>
+                    </li>
+
+                    <li>
+                       
+                        <a href="#" class="navbar-link" data-nav-link>Bán</a>
+                    </li>
+
+                    <li>
+                       
+                        <a href="#" class="navbar-link" data-nav-link>Danh sách</a>
+                    </li>
+
+                    <li>
+                       
+                        <a href="#" class="navbar-link" data-nav-link>Về chúng tôi</a>
+                    </li>
+
+                    <li>
+                     
+                        <a href="#" class="navbar-link" data-nav-link>Liên hệ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--Signup-->
+            <a href="#" class="btn btn-secondary">Đăng nhập</a>
+
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="grid-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+            </button>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main>
+        <article class="article">
+            <section class="section hero">
+                <div class="container">
+                    <!--background-->
+                    <div class="hero-bg">
+                        <div class="hero-content">
+                            <h1 class="h1 hero-title">
+                                Chúng tôi sẽ giúp bạn tìm <span class="span">Ngôi nhà</span> đẹp
+                            </h1>
+
+                            <p class="hero-text">
+
+                                Một biểu mẫu tuyệt vời để mua, bán và cho thuê tài sản của bạn mà không cần bất kỳ đại
+                                lý hoặc cam kết nào.
+                            </p>
+                        </div>
+                    </div>
+                    <!--form wrapper-->
+                    <div class="hero-form-wrapper">
+                        <div class="form-tab">
+
+                            <button class="tab-btn active" data-tab-btn>Mua</button>
+                            <button class="tab-btn" data-tab-btn>Bán</button>
+                            <button class="tab-btn" data-tab-btn>Thuê</button>
+
+                        </div>
+
+
+                        <form action="" class="hero-form">
+
+                            <div class="input-wrapper">
+
+                                <label for="search" class="input-label">Tìm kiếm : *</label>
+
+                                <input type="search" name="search" id="search" placeholder="Search your home" required
+                                    class="input-field">
+
+                                <ion-icon name="search-outline"></ion-icon>
+
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="category" class="input-label">Chọn Loại Nhà:</label>
+
+                                <select name="category" id="category" class="dropdown-list">
+
+                                    <option value="house">Nhà</option>
+                                    <option value="apartment">Chung cư</option>
+                                    <option value="offices">Văn phòng</option>
+                                    <option value="townhome">Nhà mặt phố</option>
+
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="min-price" class="input-label"> Giá thấp nhất :</label>
+
+                                <select name="min-price" id="min-price" class="dropdown-list">
+
+                                    <option value="min price">Min Price</option>
+                                    <option value="500">100.000.000VNĐ</option>
+                                    <option value="1000">78.000.000VNĐ</option>
+                                    <option value="2000">60.000.000VNĐ</option>
+                                    <option value="3000">98.000.000VNĐ</option>
+                                    <option value="4000">99.000.000VNĐ</option>
+                                    <option value="5000">102.500.000VNĐ</option>
+                                    <option value="6000">114.300.000VNĐ</option>
+
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="max-price" class="input-label">Giá cao nhất :</label>
+
+                                <select name="max-price" id="max-price" class="dropdown-list">
+
+                                    <option value="max price">Max Price</option>
+                                    <option value="500">1.000.000.000VNĐ</option>
+                                    <option value="1000">2.100.000.000VNĐ</option>
+                                    <option value="2000">1.150.000.000VNĐ</option>
+                                    <option value="3000">2.110.000.000VNĐ</option>
+                                    <option value="4000">3.900.000.000VNĐ</option>
+                                    <option value="5000">2.500.000.000VNĐ</option>
+                                    <option value="6000">4.700.000.000VNĐ</option>
+
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Tìm kiếm ngay</button>
+
+                        </form>
+            </section>
+
+
+        </article>
+
+        <!--about-->
+
+        <section class="section about" aria-label="about">
+            <div class="container">
+
+                <div class="about-banner img-holder" style="--width: 600; --height: 700;">
+                    <img src="./assets/images/about-banner.jpg" width="600" height="700" loading="lazy"
+                        alt="about banner" class="img-cover">
+
+                    <button class="play-btn" aria-label="play video">
+                        <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <div class="about-content">
+
+                    <h2 class="h2 section-title">Hiệu quả chất lượng , minh bạch, rõ ràng</h2>
+
+                    <p class="section-text">
+                        Bất động sản Tây Ninh đã phát triển một nền tảng cho thị trường .Bất động sản cho phép người mua
+                        và người bán dễ dàng
+                        
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary">Xem thêm ...</a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--image product-->
+        <section class="section property" aria-label="property">
+            <div class="container">
+
+                <h2 class="h2 section-title">Các mẫu nhà đẹp</h2>
+
+                <p class="section-text">
+                    Một số mẫu nhà tuyệt vời cho thuê và mua mà không có bất kì cam kết phát sinh chi phí nào khác
+                </p>
+
+                <ul class="property-list">
+
+                    <li>
+                        <div class="property-card">
+
+                            <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                <img src="./assets/images/property-1.jpg" width="800" height="533" loading="lazy"
+                                    alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
+                            </figure>
+
+                            <button class="card-action-btn" aria-label="add to favourite">
+                                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                            </button>
+
+                            <div class="card-content">
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Mẫu nhà kiểu Mỹ ,Phường 7 TP Tây Ninh </a>
+                                </h3>
+
+                                <ul class="card-list">
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="cube-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">8000sqf (chất lượng cao)</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="bed-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">4 Giường</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="man-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">4 Bồn tắm</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-meta">
+
+                                    <div>
+                                        <span class="meta-title">Giá</span>
+
+                                        <span class="meta-text">$3.598.500.000VNĐ</span>
+                                    </div>
+
+                                    <div>
+                                        <span class="meta-title">Đánh giá</span>
+
+                                        <span class="meta-text">
+
+                                            <div class="rating-wrapper">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                            </div>
+
+                                            <span>5.0(hơn 30 người đã đánh giá)</span>
+
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="property-card">
+
+                            <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                <img src="./assets/images/property-2.jpg" width="800" height="533" loading="lazy"
+                                    alt="59345 STONEWALL DR, Plaquemine, LA 70764, USA" class="img-cover">
+                            </figure>
+
+                            <button class="card-action-btn" aria-label="add to favourite">
+                                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                            </button>
+
+                            <div class="card-content">
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Mẫu nhà nóc Thái ,Phường 1 TP Tây Ninh</a>
+                                </h3>
+
+                                <ul class="card-list">
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="cube-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">4000sqf (Được đánh giá ổn định)</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="bed-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">4 Giường</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="man-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">4 Bồn tắm</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-meta">
+
+                                    <div>
+                                        <span class="meta-title">Giá</span>
+
+                                        <span class="meta-text">2.100.000.000VNĐ</span>
+                                    </div>
+
+                                    <div>
+                                        <span class="meta-title">Đánh giá</span>
+
+                                        <span class="meta-text">
+
+                                            <div class="rating-wrapper">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                            </div>
+
+                                            <span>5.0(22 người đã đánh giá)</span>
+
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="property-card">
+
+                            <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                <img src="./assets/images/property-3.jpg" width="800" height="533" loading="lazy"
+                                    alt="3723 SANDBAR DR, Addis, LA 70710, USA" class="img-cover">
+                            </figure>
+
+                            <button class="card-action-btn" aria-label="add to favourite">
+                                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                            </button>
+
+                            <div class="card-content">
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Mẫu nhà Sandbar kiểu Mỹ , Phường 3 TP Tây Ninh</a>
+                                </h3>
+
+                                <ul class="card-list">
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="cube-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">3000sqf (được đánh giá ổn định)</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="bed-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">4 Giường</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="man-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">3 Bồn tắm</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-meta">
+
+                                    <div>
+                                        <span class="meta-title">Giá</span>
+
+                                        <span class="meta-text">1.780.000.000VNĐ</span>
+                                    </div>
+
+                                    <div>
+                                        <span class="meta-title">Đánh giá</span>
+
+                                        <span class="meta-text">
+
+                                            <div class="rating-wrapper">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                            </div>
+
+                                            <span>5.0(30)</span>
+
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="property-card">
+
+                            <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                <img src="./assets/images/property-4.jpg" width="800" height="533" loading="lazy"
+                                    alt="LOT 21 ROYAL OAK DR, Prairieville, LA 70769, USA" class="img-cover">
+                            </figure>
+
+                            <button class="card-action-btn" aria-label="add to favourite">
+                                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                            </button>
+
+                            <div class="card-content">
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Mẫu chung cư cao cấp gần Phố đi bộ Nguyễn Huệ , Quận 1 TP Hồ Chí Minh</a>
+                                </h3>
+
+                                <ul class="card-list">
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="cube-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">3700sqf (đánh giá ổn định)</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="bed-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">3 Giường</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="man-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">2 Bồn tắm</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-meta">
+
+                                    <div>
+                                        <span class="meta-title">Giá</span>
+
+                                        <span class="meta-text">1.600.000.000VNĐ</span>
+                                    </div>
+
+                                    <div>
+                                        <span class="meta-title">Đánh giá</span>
+
+                                        <span class="meta-text">
+
+                                            <div class="rating-wrapper">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half-outline"></ion-icon>
+                                            </div>
+
+                                            <span>4.5(17 người đã đánh giá)</span>
+
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="property-card">
+
+                            <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                <img src="./assets/images/property-5.jpg" width="800" height="533" loading="lazy"
+                                    alt="710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, USA" class="img-cover">
+                            </figure>
+
+                            <button class="card-action-btn" aria-label="add to favourite">
+                                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                            </button>
+
+                            <div class="card-content">
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Mẫu nhà kiểu Hàn Quốc , TP Tây Ninh </a>
+                                </h3>
+
+                                <ul class="card-list">
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="cube-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">8000sqf (chất lượng cao)</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="bed-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">4 Giường</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="man-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">4 Bồn tắm</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-meta">
+
+                                    <div>
+                                        <span class="meta-title">Giá</span>
+
+                                        <span class="meta-text">1.320.000.000VNĐ</span>
+                                    </div>
+
+                                    <div>
+                                        <span class="meta-title">Đánh giá</span>
+
+                                        <span class="meta-text">
+
+                                            <div class="rating-wrapper">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half-outline"></ion-icon>
+                                            </div>
+
+                                            <span>4.5( 20 người đánh giá)</span>
+
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="property-card">
+
+                            <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
+                                <img src="./assets/images/property-6.jpg" width="800" height="533" loading="lazy"
+                                    alt="5133 MCLAIN WAY, Baton Rouge, LA 70809, USA" class="img-cover">
+                            </figure>
+
+                            <button class="card-action-btn" aria-label="add to favourite">
+                                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                            </button>
+
+                            <div class="card-content">
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Chung cư cao cấp giá ưu đãi,TP Tây Ninh</a>
+                                </h3>
+
+                                <ul class="card-list">
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="cube-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">4000sqf(đánh giá cao)</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="bed-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">2 Giường</span>
+                                    </li>
+
+                                    <li class="card-item">
+                                        <div class="item-icon">
+                                            <ion-icon name="man-outline"></ion-icon>
+                                        </div>
+
+                                        <span class="item-text">2 Bồn tắm</span>
+                                    </li>
+
+                                </ul>
+
+                                <div class="card-meta">
+
+                                    <div>
+                                        <span class="meta-title">Giá</span>
+
+                                        <span class="meta-text">700.000.000VNĐ</span>
+                                    </div>
+
+                                    <div>
+                                        <span class="meta-title">Đánh giá</span>
+
+                                        <span class="meta-text">
+
+                                            <div class="rating-wrapper">
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star"></ion-icon>
+                                                <ion-icon name="star-half-outline"></ion-icon>
+                                            </div>
+
+                                            <span>4.5(12 người đánh giá)</span>
+
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+
+        <div class="footer-top">
+          <div class="container">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <ion-icon name="business-outline"></ion-icon> Bất động sản Tây Ninh
+              </a>
+    
+              <p class="footer-text">
+                Một biểu mẫu tuyệt vời để mua, bán và cho thuê tài sản của bạn mà không cần bất kỳ đại lý hoặc cam kết nào.
+              </p>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Company</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward"></ion-icon>
+    
+                  <span class="span">About us</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward"></ion-icon>
+    
+                  <span class="span">Services</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward"></ion-icon>
+    
+                  <span class="span">Pricing</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward"></ion-icon>
+    
+                  <span class="span">Blog</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward"></ion-icon>
+    
+                  <span class="span">Login</span>
+                </a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Useful Links</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward"></ion-icon>
+    
+                  <span class="span">Terms of Services</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward"></ion-icon>
+    
+                  <span class="span">Privacy Policy</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward"></ion-icon>
+    
+                  <span class="span">Listing</span>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon name="chevron-forward"></ion-icon>
+    
+                  <span class="span">Contact</span>
+                </a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Contact Details</p>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="location-outline"></ion-icon>
+    
+                <address class="address">
+                  655/49 Lê Trọng Tấn,Bình Hưng Hoà,<br>
+                 TP Hồ Chí Minh
+                  <a href="#" class="address-link">View on Google map</a>
+                </address>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="mail-outline"></ion-icon>
+    
+                <a href="mailto:batdongsantayninh@example.com" class="footer-link">batdongsantayninh@example.com</a>
+              </li>
+    
+              <li class="footer-item">
+                <ion-icon name="call-outline"></ion-icon>
+    
+                <a href="tel:+152534468854" class="footer-link">113 </a>
+              </li>
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              &copy; 2022 Bất động sản. All Right Reserved by <a href="#" class="copyright-link">Bất động sản Tây Ninh</a>.
+            </p>
+    
+            <ul class="social-list">
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+      </footer>
+    
+
+    <script src="./assets/js/script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
