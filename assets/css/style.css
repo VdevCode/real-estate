@@ -446,7 +446,9 @@ img{
   padding: 12px;
   border-radius: 50px;
 }
-
+.card-banner:hover{
+  cursor: pointer;
+}
 .property-card .card-content {
   color: var(--oxford-blue);
   padding: 25px;
@@ -588,12 +590,65 @@ img{
   border-color: var(--green-pigment);
   color: var(--white);
 }
-
-
-
+.tour-content-block{
+  margin-top: 20px;
+}
+.tour-content-title{
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--black);
+}
+.swiper-image{
+  position: relative;
+}
+.swiper-image img{
+  border-radius: var(--radius-12);
+}
+.swiper-title{
+  margin-top: 5px;
+  color: var(--white);
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+.tour-places [class*="swiper-button"]{
+  top: 45%;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none!important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+.tour-places [class*="swiper-button"]::after {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-content: 'next';
+  content: var(--tw-content);
+}
+.tour-places [class*="swiper-button"]::after {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-content: 'next';
+  content: var(--tw-content);
+}
+.tour-places .swiper-button-prev::after {
+  --tw-content: 'prev';
+  content: var(--tw-content);
+}
 
 @media (min-width: 640px) {
 

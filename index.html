@@ -16,6 +16,7 @@
     <!-- 
       - google font link
     -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
@@ -37,33 +38,33 @@
             <nav class="navbar container">
                 <ul class="navbar-list">
                     <li>
-                      
+
                         <a href="#" class="navbar-link" data-nav-link>Trang chủ</a>
                     </li>
 
                     <li>
-                       
-                        
+
+
                         <a href="#" class="navbar-link" data-nav-link>Mua</a>
                     </li>
 
                     <li>
-                       
+
                         <a href="#" class="navbar-link" data-nav-link>Bán</a>
                     </li>
 
                     <li>
-                       
+
                         <a href="#" class="navbar-link" data-nav-link>Danh sách</a>
                     </li>
 
                     <li>
-                       
+
                         <a href="#" class="navbar-link" data-nav-link>Về chúng tôi</a>
                     </li>
 
                     <li>
-                     
+
                         <a href="#" class="navbar-link" data-nav-link>Liên hệ</a>
                     </li>
                 </ul>
@@ -198,7 +199,7 @@
                     <p class="section-text">
                         Bất động sản Tây Ninh đã phát triển một nền tảng cho thị trường .Bất động sản cho phép người mua
                         và người bán dễ dàng
-                        
+
 
                     </p>
 
@@ -206,6 +207,77 @@
 
                 </div>
 
+            </div>
+        </section>
+
+        <section class="container">
+
+            <div class="tour-content-block">
+                <div class="tour-content-title">Phong cảnh một số ngôi nhà đẹp</div>
+                <div class="tour-places">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <img src="./assets/images/hero-bg1.jpg"
+                                        alt="image" />
+                                </div>
+                                <div class="swiper-title">Nhà nóc thái Tây Ninh</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <img src="./assets/images/hero-bg2.jpg"
+                                        alt="image" />
+                                </div>
+                                <div class="swiper-title">Gallipoli</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <img src="./assets/images/hero-bg4.jpg"
+                                        alt="image" />
+                                </div>
+                                <div class="swiper-title">Troy</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <img src="./assets/images/Cover.jpg"
+                                        alt="image" />
+                                </div>
+                                <div class="swiper-title">Kusadasi</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <img src="./assets/images/west-coast-contemporary-style-homes-house-design-plans_98522-670x400.jpg"
+                                        alt="image" />
+                                </div>
+                                <div class="swiper-title">Fethiye</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <img src="./assets/images/scenic-view-hero.jpg"
+                                        alt="image" />
+                                </div>
+                                <div class="swiper-title">Oludeniz</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <img src="./assets/images/images.jpg"
+                                        alt="image" />
+                                </div>
+                                <div class="swiper-title">Dalyan</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-image">
+                                    <img src="./assets/images/images (1).jpg"
+                                        alt="image" />
+                                </div>
+                                <div class="swiper-title">Cappadocia</div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -230,7 +302,7 @@
                             </figure>
 
                             <button class="card-action-btn" aria-label="add to favourite">
-                                <ion-icon name="heart" aria-hidden="true"></ion-icon>
+                                <ion-icon class="card-action-btn-love" name="heart" aria-hidden="true"></ion-icon>
                             </button>
 
                             <div class="card-content">
@@ -473,7 +545,8 @@
                             <div class="card-content">
 
                                 <h3 class="h3">
-                                    <a href="#" class="card-title">Mẫu chung cư cao cấp gần Phố đi bộ Nguyễn Huệ , Quận 1 TP Hồ Chí Minh</a>
+                                    <a href="#" class="card-title">Mẫu chung cư cao cấp gần Phố đi bộ Nguyễn Huệ , Quận
+                                        1 TP Hồ Chí Minh</a>
                                 </h3>
 
                                 <ul class="card-list">
@@ -706,184 +779,190 @@
     <footer class="footer">
 
         <div class="footer-top">
-          <div class="container">
-    
-            <div class="footer-brand">
-    
-              <a href="#" class="logo">
-                <ion-icon name="business-outline"></ion-icon> Bất động sản Tây Ninh
-              </a>
-    
-              <p class="footer-text">
-                Một biểu mẫu tuyệt vời để mua, bán và cho thuê tài sản của bạn mà không cần bất kỳ đại lý hoặc cam kết nào.
-              </p>
-    
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <ion-icon name="business-outline"></ion-icon> Bất động sản Tây Ninh
+                    </a>
+
+                    <p class="footer-text">
+                        Một biểu mẫu tuyệt vời để mua, bán và cho thuê tài sản của bạn mà không cần bất kỳ đại lý hoặc
+                        cam kết nào.
+                    </p>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Company</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="chevron-forward"></ion-icon>
+
+                            <span class="span">About us</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="chevron-forward"></ion-icon>
+
+                            <span class="span">Services</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="chevron-forward"></ion-icon>
+
+                            <span class="span">Pricing</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="chevron-forward"></ion-icon>
+
+                            <span class="span">Blog</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="chevron-forward"></ion-icon>
+
+                            <span class="span">Login</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Useful Links</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="chevron-forward"></ion-icon>
+
+                            <span class="span">Terms of Services</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="chevron-forward"></ion-icon>
+
+                            <span class="span">Privacy Policy</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="chevron-forward"></ion-icon>
+
+                            <span class="span">Listing</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">
+                            <ion-icon name="chevron-forward"></ion-icon>
+
+                            <span class="span">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contact Details</p>
+                    </li>
+
+                    <li class="footer-item">
+                        <ion-icon name="location-outline"></ion-icon>
+
+                        <address class="address">
+                            655/49 Lê Trọng Tấn,Bình Hưng Hoà,<br>
+                            TP Hồ Chí Minh
+                            <a href="#" class="address-link">View on Google map</a>
+                        </address>
+                    </li>
+
+                    <li class="footer-item">
+                        <ion-icon name="mail-outline"></ion-icon>
+
+                        <a href="mailto:batdongsantayninh@example.com"
+                            class="footer-link">batdongsantayninh@example.com</a>
+                    </li>
+
+                    <li class="footer-item">
+                        <ion-icon name="call-outline"></ion-icon>
+
+                        <a href="tel:+152534468854" class="footer-link">113 </a>
+                    </li>
+
+                </ul>
+
             </div>
-    
-            <ul class="footer-list">
-    
-              <li>
-                <p class="footer-list-title">Company</p>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">
-                  <ion-icon name="chevron-forward"></ion-icon>
-    
-                  <span class="span">About us</span>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">
-                  <ion-icon name="chevron-forward"></ion-icon>
-    
-                  <span class="span">Services</span>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">
-                  <ion-icon name="chevron-forward"></ion-icon>
-    
-                  <span class="span">Pricing</span>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">
-                  <ion-icon name="chevron-forward"></ion-icon>
-    
-                  <span class="span">Blog</span>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">
-                  <ion-icon name="chevron-forward"></ion-icon>
-    
-                  <span class="span">Login</span>
-                </a>
-              </li>
-    
-            </ul>
-    
-            <ul class="footer-list">
-    
-              <li>
-                <p class="footer-list-title">Useful Links</p>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">
-                  <ion-icon name="chevron-forward"></ion-icon>
-    
-                  <span class="span">Terms of Services</span>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">
-                  <ion-icon name="chevron-forward"></ion-icon>
-    
-                  <span class="span">Privacy Policy</span>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">
-                  <ion-icon name="chevron-forward"></ion-icon>
-    
-                  <span class="span">Listing</span>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="footer-link">
-                  <ion-icon name="chevron-forward"></ion-icon>
-    
-                  <span class="span">Contact</span>
-                </a>
-              </li>
-    
-            </ul>
-    
-            <ul class="footer-list">
-    
-              <li>
-                <p class="footer-list-title">Contact Details</p>
-              </li>
-    
-              <li class="footer-item">
-                <ion-icon name="location-outline"></ion-icon>
-    
-                <address class="address">
-                  655/49 Lê Trọng Tấn,Bình Hưng Hoà,<br>
-                 TP Hồ Chí Minh
-                  <a href="#" class="address-link">View on Google map</a>
-                </address>
-              </li>
-    
-              <li class="footer-item">
-                <ion-icon name="mail-outline"></ion-icon>
-    
-                <a href="mailto:batdongsantayninh@example.com" class="footer-link">batdongsantayninh@example.com</a>
-              </li>
-    
-              <li class="footer-item">
-                <ion-icon name="call-outline"></ion-icon>
-    
-                <a href="tel:+152534468854" class="footer-link">113 </a>
-              </li>
-    
-            </ul>
-    
-          </div>
         </div>
-    
+
         <div class="footer-bottom">
-          <div class="container">
-    
-            <p class="copyright">
-              &copy; 2022 Bất động sản. All Right Reserved by <a href="#" class="copyright-link">Bất động sản Tây Ninh</a>.
-            </p>
-    
-            <ul class="social-list">
-    
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-    
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-    
-            </ul>
-    
-          </div>
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2022 Bất động sản. All Right Reserved by <a href="#" class="copyright-link">Bất động sản Tây
+                        Ninh</a>.
+                </p>
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
         </div>
-    
-      </footer>
-    
 
+
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
