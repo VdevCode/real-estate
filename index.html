@@ -16,6 +16,7 @@
     <!-- 
       - google font link
     -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +31,16 @@
         <div class="container">
 
             <!--Logo-->
-            <a href="" class="logo">
-                <ion-icon name="business-outline"></ion-icon>Real Estate
+            <a href="" class="logo-image-title">
+                <img class="image-title" src="./assets/images/backgroundTitle.png" alt="">
+                <h1>Real States</h1>
             </a>
+
+            <button class="nav-darkmode-btn" aria-label="Toggle menu" data-nav-toggler>
+                <i class='bx bx-sun sunDarkmode'></i>
+            </button>
+
+
 
             <!--List menu-->
             <nav class="navbar container">
@@ -71,7 +79,11 @@
             </nav>
 
             <!--Signup-->
-            <a href="#" class="btn btn-secondary">Đăng nhập</a>
+
+            <button class="nav-user-btn" aria-label="Toggle menu" data-nav-toggler>
+                <ion-icon name="person-outline"></ion-icon>
+            </button>
+
 
             <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
                 <ion-icon name="grid-outline" aria-hidden="true" class="menu-icon"></ion-icon>
@@ -84,7 +96,9 @@
     <main>
         <article class="article">
             <section class="section hero">
+                
                 <div class="container">
+                    
                     <!--background-->
                     <div class="hero-bg">
                         <div class="hero-content">
@@ -94,9 +108,10 @@
 
                             <p class="hero-text">
 
-                                Một biểu mẫu tuyệt vời để mua, bán và cho thuê tài sản của bạn mà không cần bất kỳ đại
+                                Noiw mua bán trung gian uy tín ! mua, bán và cho thuê tài sản của bạn mà không cần bất kỳ đại
                                 lý hoặc cam kết nào.
                             </p>
+                            <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
                         </div>
                     </div>
                     <!--form wrapper-->
@@ -104,13 +119,13 @@
                         <div class="form-tab">
 
                             <button class="tab-btn active" data-tab-btn>Mua</button>
-                            <button class="tab-btn" data-tab-btn>Bán</button>
+                            <button class="tab-btn " data-tab-btn>Bán</button>
                             <button class="tab-btn" data-tab-btn>Thuê</button>
 
                         </div>
 
 
-                        <form action="" class="hero-form">
+                        <form action="" class="hero-form active">
 
                             <div class="input-wrapper">
 
@@ -173,6 +188,124 @@
                             <button type="submit" class="btn btn-primary">Tìm kiếm ngay</button>
 
                         </form>
+                        <form action="" class="hero-form">
+
+                           
+
+                            <div class="input-wrapper">
+                                <label for="category" class="input-label">Chọn Loại Nhà:</label>
+
+                                <select name="category" id="category" class="dropdown-list">
+
+                                    <option value="house">Nhà</option>
+                                    <option value="apartment">Chung cư</option>
+                                    <option value="offices">Văn phòng</option>
+                                    <option value="townhome">Nhà mặt phố</option>
+
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="min-price" class="input-label"> Giá nhà thấp nhất bạn đưa ra:</label>
+
+                                <select name="min-price" id="min-price" class="dropdown-list">
+
+                                    <option value="min price">Min Price</option>
+                                    <option value="500">100.000.000VNĐ</option>
+                                    <option value="1000">78.000.000VNĐ</option>
+                                    <option value="2000">60.000.000VNĐ</option>
+                                    <option value="3000">98.000.000VNĐ</option>
+                                    <option value="4000">99.000.000VNĐ</option>
+                                    <option value="5000">102.500.000VNĐ</option>
+                                    <option value="6000">114.300.000VNĐ</option>
+
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="max-price" class="input-label">Giá nhà cao nhất bạn đưa ra:</label>
+
+                                <select name="max-price" id="max-price" class="dropdown-list">
+
+                                    <option value="max price">Max Price</option>
+                                    <option value="500">1.000.000.000VNĐ</option>
+                                    <option value="1000">2.100.000.000VNĐ</option>
+                                    <option value="2000">1.150.000.000VNĐ</option>
+                                    <option value="3000">2.110.000.000VNĐ</option>
+                                    <option value="4000">3.900.000.000VNĐ</option>
+                                    <option value="5000">2.500.000.000VNĐ</option>
+                                    <option value="6000">4.700.000.000VNĐ</option>
+
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Tìm kiếm ngay</button>
+
+                        </form>
+                        <form action="" class="hero-form">
+
+                            <div class="input-wrapper">
+
+                                <label for="search" class="input-label">Tìm kiếm nơi mà bạn muốn thuê : *</label>
+
+                                <input type="search" name="search" id="search" placeholder="Search your home" required
+                                    class="input-field">
+
+                                <ion-icon name="search-outline"></ion-icon>
+
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="category" class="input-label">Chọn Loại Nhà:</label>
+
+                                <select name="category" id="category" class="dropdown-list">
+
+                                    <option value="house">Nhà</option>
+                                    <option value="apartment">Chung cư</option>
+                                    <option value="offices">Văn phòng</option>
+                                    <option value="townhome">Nhà mặt phố</option>
+
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="min-price" class="input-label"> Giá thấp nhất :</label>
+
+                                <select name="min-price" id="min-price" class="dropdown-list">
+
+                                    <option value="min price">Min Price</option>
+                                    <option value="500">100.000.000VNĐ</option>
+                                    <option value="1000">78.000.000VNĐ</option>
+                                    <option value="2000">60.000.000VNĐ</option>
+                                    <option value="3000">98.000.000VNĐ</option>
+                                    <option value="4000">99.000.000VNĐ</option>
+                                    <option value="5000">102.500.000VNĐ</option>
+                                    <option value="6000">114.300.000VNĐ</option>
+
+                                </select>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="max-price" class="input-label">Giá cao nhất :</label>
+
+                                <select name="max-price" id="max-price" class="dropdown-list">
+
+                                    <option value="max price">Max Price</option>
+                                    <option value="500">1.000.000.000VNĐ</option>
+                                    <option value="1000">2.100.000.000VNĐ</option>
+                                    <option value="2000">1.150.000.000VNĐ</option>
+                                    <option value="3000">2.110.000.000VNĐ</option>
+                                    <option value="4000">3.900.000.000VNĐ</option>
+                                    <option value="5000">2.500.000.000VNĐ</option>
+                                    <option value="6000">4.700.000.000VNĐ</option>
+
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Tìm kiếm ngay</button>
+
+                        </form>
+                    </div>
             </section>
 
 
@@ -219,29 +352,25 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="swiper-image">
-                                    <img src="./assets/images/hero-bg1.jpg"
-                                        alt="image" />
+                                    <img src="./assets/images/hero-bg1.jpg" alt="image" />
                                 </div>
                                 <div class="swiper-title">Nhà nóc thái Tây Ninh</div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-image">
-                                    <img src="./assets/images/hero-bg2.jpg"
-                                        alt="image" />
+                                    <img src="./assets/images/hero-bg2.jpg" alt="image" />
                                 </div>
                                 <div class="swiper-title">Gallipoli</div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-image">
-                                    <img src="./assets/images/hero-bg4.jpg"
-                                        alt="image" />
+                                    <img src="./assets/images/hero-bg4.jpg" alt="image" />
                                 </div>
                                 <div class="swiper-title">Troy</div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="swiper-image">
-                                    <img src="./assets/images/Cover.jpg"
-                                        alt="image" />
+                                    <img src="./assets/images/Cover.jpg" alt="image" />
                                 </div>
                                 <div class="swiper-title">Kusadasi</div>
                             </div>
@@ -252,27 +381,7 @@
                                 </div>
                                 <div class="swiper-title">Fethiye</div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="swiper-image">
-                                    <img src="./assets/images/scenic-view-hero.jpg"
-                                        alt="image" />
-                                </div>
-                                <div class="swiper-title">Oludeniz</div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper-image">
-                                    <img src="./assets/images/images.jpg"
-                                        alt="image" />
-                                </div>
-                                <div class="swiper-title">Dalyan</div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper-image">
-                                    <img src="./assets/images/images (1).jpg"
-                                        alt="image" />
-                                </div>
-                                <div class="swiper-title">Cappadocia</div>
-                            </div>
+
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
@@ -888,12 +997,16 @@
                         <p class="footer-list-title">Contact Details</p>
                     </li>
 
+                    
+
                     <li class="footer-item">
                         <ion-icon name="location-outline"></ion-icon>
 
                         <address class="address">
                             655/49 Lê Trọng Tấn,Bình Hưng Hoà,<br>
-                            TP Hồ Chí Minh
+                            TP Hồ Chí 
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.960950103551!2d106.60318011485717!3d10.814300361450425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752b88760137c9%3A0x1b4b7853c4e6fd80!2zNjU1LzQ5IEzDqiBUcuG7jW5nIFThuqVuLCBCw6xuaCBIxrBuZyBIb8OgLCBCw6xuaCBUw6JuLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmggNzAwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1665634509644!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             <a href="#" class="address-link">View on Google map</a>
                         </address>
                     </li>
@@ -959,6 +1072,10 @@
 
     </footer>
 
+    <div className="scroll-to-top">
+        <span class="btn btn-position btn-style">
+            <ion-icon name="arrow-up-outline"></ion-icon></i>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
